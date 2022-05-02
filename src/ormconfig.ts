@@ -8,12 +8,12 @@ dotenv.config({
 
 export default {
   type: 'postgres',
-  host: 'db',
-  port: parseInt(process.env.POSTGRES_PORT as string, 10) as number,
+  host: 'ec2-63-32-248-14.eu-west-1.compute.amazonaws.com',
+  port: 5432,
   cache: false,
-  username: process.env.POSTGRES_USER as string,
-  password: process.env.POSTGRES_PASSWORD as string,
-  database: process.env.POSTGRES_DB as string,
+  username: 'pzmnvrjricvrwc',
+  password: '8e2e597349ce9ae70bb976edaaf6093cb835e1686564cb56397787f487e8b7da',
+  database: 'd3lcll1lg2diob',
   synchronize: false,
   logging: false,
   entities: ['src/resources/**/**.entity{.ts,.js}'],
